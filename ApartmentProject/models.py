@@ -8,6 +8,7 @@ class Apartment(models.Model):
     bedrooms = models.SmallIntegerField(default=1)
     bathrooms = models.SmallIntegerField(default=1)
     balcony = models.BooleanField(default=False)
+    compartment = models.CharField(max_length=100, null=True, blank=True)
 
     # utilities
     washing_machine = models.BooleanField(default=False)
